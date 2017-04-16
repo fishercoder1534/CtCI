@@ -3,7 +3,7 @@ language: java
 jdk:
   - oraclejdk8
 
-gradle check clean build
+script: gradle check clean build
 
 notifications:
   email:
