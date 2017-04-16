@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+notifications:
+  email:
+    recipients:
+      - fishercoder@gmail.com
+    on_failure: always
+
