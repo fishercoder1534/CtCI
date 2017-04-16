@@ -4,3 +4,4 @@ Java solutions to Cracking the Coding Interviews
 |  #  |      Title     |   Solutions   | Time          | Space           
 |-----|----------------|---------------|---------------|---------------
 |_1_1|[String has unique chars](../master/src/main/java/com/fisher/coder/chapter1/_1_1.java)|[Solution](../master/src/main/java/com/fisher/coder/chapter1/_1_1.java) | O(n) |O(1) ~ O(n)
+|_1_2|[Reverse a string](../master/src/main/java/com/fisher/coder/chapter1/_1_2.java)|[Solution](../master/src/main/java/com/fisher/coder/chapter1/_1_2.java) | O(n) |O(1)
