@@ -12,5 +12,6 @@ public class _1_1_test {
     public void test1() {
         Assert.assertEquals(_1_1.hasAllUniqueChars_use_set("abcda"), false);
         Assert.assertEquals(_1_1.hasAllUniqueChars_use_boolean_array("abcda"), false);
+        Assert.assertEquals(_1_1.hasAllUniqueChars_use_bit("abcda"), false);
     }
 }

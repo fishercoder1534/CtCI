@@ -43,5 +43,13 @@ public class _1_1 {
 
     /**Solution 3: use bit (assuming this string only uses lowercase letters a through z),
      * so we could use only one int to represent this string*/
-    //TODO:
+    public static boolean hasAllUniqueChars_use_bit(String str) {
+        int checker = 0;
+        for (int i = 0; i < str.length(); i++) {
+            int val = str.charAt(i) - 'a';
+            if ((checker & (1 << val)) > 0) return false;//this is to check if (1 << val) already existed in checker, if so, that means this char has already showed up in previous substrings
+            checker |= (1 << val);//if not, we store (1 << val) in checker: exclusive or '|' does this perfectly!
+        }
+        return true;
+    }
 }
