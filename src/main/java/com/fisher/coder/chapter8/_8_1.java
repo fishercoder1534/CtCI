@@ -1,9 +1,9 @@
-package com.fisher.coder.chapter9;
+package com.fisher.coder.chapter8;
 
 /**
  * Created by stevesun on 4/16/17.
  */
-public class _9_1 {
+public class _8_1 {
     /**A child is running up a staircase with n steps, and can hop either 1 step, 2 steps, or 3 steps at a time.
      * Implement a method to count how many possible ways the child can run up the stairs.*/
 

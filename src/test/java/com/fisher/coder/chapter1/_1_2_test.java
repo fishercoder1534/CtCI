@@ -10,8 +10,15 @@ public class _1_2_test {
 
     @Test
     public void test1() {
-        String str = "abcda";
-        String reverseStr = new StringBuilder(str).reverse().toString();
-        Assert.assertEquals(_1_2.reverse(str), reverseStr);
+        String a = "abcda";
+        String b = "caadb";
+        Assert.assertEquals(_1_2.isPermutation(a, b), true);
+    }
+
+    @Test
+    public void test2() {
+        String a = "abcdaaa";
+        String b = "caadb";
+        Assert.assertEquals(_1_2.isPermutation(a, b), false);
     }
 }

@@ -4,21 +4,27 @@ package com.fisher.coder.chapter1;
  * Created by stevesun on 4/16/17.
  */
 public class _1_3 {
-    /**Given two strings, write a method to decide if one is a permuation of the other.*/
+    /**Write a method to replace all spaces in a string with '20%'. You may assume that the string has sufficient space at the end
+     * of the string to hold the additional characters, and that you are given the "true" length of the string.
+     * (Note: if implementing in Java, please use a character array so that you can perform this operation in place.)
+     *
+     * Example:
+     * Input: "Mr John Smith   "
+     * Output: "Mr%20John%20Smith"*/
 
-    public static boolean isPermutation(String a, String b) {
-        if (a.length() != b.length()) return false;
-        //ask your interviewer if the two strings are ASCII first before you use 256 as the array length
-        int[] count = new int[256];
-        for (char c : a.toCharArray()) {
-            count[c - 'a']++;
+    public static String replaceWhitespace_use_javaUtil(String original) {
+        return original.replace(" ", "%20");
+    }
+
+    public static String replaceWhitespace_use_plain_java(String original) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (char c : original.toCharArray()) {
+            if (c == ' ') {
+                stringBuilder.append("%20");
+            } else {
+                stringBuilder.append(c);
+            }
         }
-        for (char c : b.toCharArray()) {
-            count[c - 'a']--;
-        }
-        for (int i : count) {
-            if (i != 0) return false;
-        }
-        return true;
+        return stringBuilder.toString();
     }
 }

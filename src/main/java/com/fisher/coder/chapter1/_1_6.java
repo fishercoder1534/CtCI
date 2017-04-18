@@ -3,7 +3,7 @@ package com.fisher.coder.chapter1;
 /**
  * Created by stevesun on 4/16/17.
  */
-public class _1_5 {
+public class _1_6 {
     /**Implement a method to perform basic string compression using the counts of repeated characters.
      * For example, the string aabcccccaaa would become a2b1c5a3.
      * If the "compressed" string would not become smaller than the original string, your method should return the original string.*/

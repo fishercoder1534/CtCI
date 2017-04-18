@@ -10,15 +10,9 @@ public class _1_3_test {
 
     @Test
     public void test1() {
-        String a = "abcda";
-        String b = "caadb";
-        Assert.assertEquals(_1_3.isPermutation(a, b), true);
-    }
-
-    @Test
-    public void test2() {
-        String a = "abcdaaa";
-        String b = "caadb";
-        Assert.assertEquals(_1_3.isPermutation(a, b), false);
+        String str = "Mr John Smith";
+        String replacedStr = "Mr%20John%20Smith";
+        Assert.assertEquals(_1_3.replaceWhitespace_use_javaUtil(str), replacedStr);
+        Assert.assertEquals(_1_3.replaceWhitespace_use_plain_java(str), replacedStr);
     }
 }
